@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 0;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 15px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: default;
+}
+
+.error {
+  color: #c62828;
+}
+
+.info {
+  color: #666;
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+.recipe-card,
+.saved-recipe {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.recipe-card h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.recipe-card h3,
+.saved-recipe h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #555;
+}
+
+.time {
+  color: #777;
+  font-size: 14px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+.saved-section {
+  margin-top: 40px;
+}
+
+.saved-recipe {
+  margin-bottom: 10px;
+}
+
+.saved-recipe summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background-color: #c62828;
+}
